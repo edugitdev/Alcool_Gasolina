@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcool or Gasolina</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/Icon_gasolina.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <main class="content">
+        <img class="logo" src="./Assets/Bomba_Gasolina.png" alt="foto de uma bomba de combustivel" />
+        <h1 class="title">Qual Melhor opção pra vc abastecer?</h1>
+
+        <form onsubmit="calcular(event)" class="form">
+            <label>Alcool(preço por litro)</label>
+            <input id="alcool" class="input" type="number" min="1" step="0.01" required />
+            <label>Gasolina(preço por litro)</label>
+            <input id="gasolina" class="input" type="number" min="1" step="0.01" required />
+
+            <input type="submit" class="button" onclick="calcular(event)" value="calcular" />
+        </form>
+
+        <section id="content-result" class="hide">
+            <span id="text-result">Compensa abastecer com Alcool</span>
+            <br>
+
+            <span id="alcool-result">Àlcool R$4.90</span>
+            <span id="gasolina-result">Gasolina R$ 6.80</span>
+        </section>
+    </main>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo_3" src="./Assets/Icon_gasolina.png" />
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por Eduardo Alves</span>
+    </footer>
+</body>
+
+</html>
