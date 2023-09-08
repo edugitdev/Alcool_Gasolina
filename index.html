@@ -17,11 +17,11 @@
 
         <form onsubmit="calcular(event)" class="form">
             <label>Alcool(preço por litro)</label>
-            <input id="alcool" class="input" type="number" min="1" step="0.01" required />
+            <input id="alcool" class="input" type="text" min="1" step="0.01" required />
             <label>Gasolina(preço por litro)</label>
-            <input id="gasolina" class="input" type="number" min="1" step="0.01" required />
+            <input id="gasolina" class="input" type="text" min="1" step="0.01" required />
 
-            <input type="submit" class="button" onclick="calcular(event)" value="calcular" />
+            <input type="submit" class="button" onclick="calcular(event)" value="calcular"/>
         </form>
 
         <section id="content-result" class="hide">
